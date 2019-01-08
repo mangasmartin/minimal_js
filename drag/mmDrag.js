@@ -1,4 +1,4 @@
-ar tocar = ("ontouchstart" in document? "touchstart" : "mousedown");
+var tocar = ("ontouchstart" in document? "touchstart" : "mousedown");
 var mover = ("ontouchmove" in document? "touchmove" : "mousemove");
 var soltar = ("ontouchend" in document? "touchstop" : "mouseup");
 
