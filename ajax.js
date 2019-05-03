@@ -1,3 +1,15 @@
+//Simple case in which you only need to do something in asynchronous mode
+/*
+ajax("file.php");
+*/
+
+//A case in which you need to get some data
+/*
+ajax("file.json", function(data){
+   console.log(data);
+});
+*/
+
 function ajax(file,foo){
    var x = new XMLHttpRequest;
    x.open("GET", file, true);
