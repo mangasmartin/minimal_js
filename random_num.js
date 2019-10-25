@@ -1,7 +1,7 @@
 function random_num(max, last){
-  //min: min number
-  //max: max number
-  //last: last number used. If set avoid repetition
+  //min: min number (Optional)
+  //max: max number (Mandatory)
+  //last: last number used: if it's set it avoids repetition only for next number (Optional)
 
   if (!min) min = 0;
   var n = Math.round(Math.random() * (max - 1)) + min;
