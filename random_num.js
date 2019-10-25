@@ -1,4 +1,4 @@
-function random_num(max, last){
+function random_num(min, max, last){
   //min: min number (Optional)
   //max: max number (Mandatory)
   //last: last number used: if it's set it avoids repetition only for next number (Optional)
