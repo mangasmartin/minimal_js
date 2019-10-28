@@ -5,7 +5,6 @@ function random_num(min, max, last){
 
  if (!min) min = 0;
   var n = Math.round(Math.random() * (max - 1)) + min;
-  console.log(n);
   if (last){
     if (n == last){
       n ++;
