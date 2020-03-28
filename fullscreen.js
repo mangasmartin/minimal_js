@@ -21,8 +21,13 @@ function fullscreen(elm,orient){
   if (elm.requestFullScreen) {
     elm.requestFullScreen();
   }
-  if (orient && screen.orientation.lock){
-    screen.orientation.lock(orient);
+  var mobiles = ["Android","iPhone","iPad"];
+  var is_mobile = false;
+  for (var m = 0; m < mobiles.length; m ++){
+    if (navigator.userAgent.indexOf(mobiles[m]) > -1) is_mobile = true;
+  }
+  if (orient){
+    if (is_mobile) screen.orientation.lock(orient);  
   } else {
     //Show an advicement asking to the user to change manually the orientation device
   }
