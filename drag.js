@@ -7,7 +7,7 @@
 function setDrag(){
   var onpress = ("ontouchstart" in document? "touchstart" : "mousedown");
   var onmove = ("ontouchmove" in document? "touchmove" : "mousemove");
-  var onrelease = ("ontouchend" in document? "touchstop" : "mouseup");
+  var onrelease = ("ontouchend" in document? "touchend" : "mouseup");
   var dragging = false, dY, dX, obj = null;
 
   window.addEventListener(onmove, drag);
